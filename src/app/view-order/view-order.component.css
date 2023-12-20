@@ -1,0 +1,20 @@
+/* Add these styles to your component's CSS file or your global styles */
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+
+  
+  .custom-table th, .custom-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  
+  
+  /* Add more styles as needed for your specific design */
+  

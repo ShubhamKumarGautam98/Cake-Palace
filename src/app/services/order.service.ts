@@ -21,5 +21,8 @@ export class OrderService {
   getAllCakeReqeusts() : Observable<Array<Order>> {
     return this.http.get<Array<Order>>("http://localhost:3000/orders");
   }
+  getOrder(){
+    return this.http.get<Order[]>("http://localhost:3000/orders");
+  }
 
 }

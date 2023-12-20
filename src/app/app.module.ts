@@ -26,11 +26,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoginComponent } from './login/login.component';
-import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { BuynowComponent } from './buynow/buynow.component';
 import { OrderComponent } from './order/order.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { ViewOrderComponent } from './view-order/view-order.component';
 
 @NgModule({
   declarations: [
@@ -42,9 +43,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     ErrorcomponentComponent,
     RegistrationComponent,
     LoginComponent,
-    AddToCartComponent,
     BuynowComponent,
     OrderComponent,
+    ViewOrderComponent,
     
   ],
   imports: [
@@ -68,7 +69,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatInputModule,
     MatSnackBarModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

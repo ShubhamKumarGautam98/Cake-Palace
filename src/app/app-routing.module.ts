@@ -8,9 +8,9 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { closingguard, closingguard1 } from './guards/closingguard.guard';
 import { Adminguard } from './guards/adminguard.guard';
-import{AddToCartComponent} from './add-to-cart/add-to-cart.component'
 import { BuynowComponent } from './buynow/buynow.component';
 import { OrderComponent } from './order/order.component';
+import { ViewOrderComponent } from './view-order/view-order.component';
 
 const routes: Routes = [
 
@@ -18,7 +18,7 @@ const routes: Routes = [
     path:"",
     component:CakeveiwComponent
   },
-  { path: 'cart', component:AddToCartComponent  },
+
   {
     path:"addcake",
     component:AddcakesComponent,
@@ -54,8 +54,8 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:"addToCart",
-    component:AddToCartComponent
+    path:"ViewOrder",
+    component:ViewOrderComponent
   },
   {
     path:"buynow/:id",

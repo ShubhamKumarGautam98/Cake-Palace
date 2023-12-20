@@ -5,10 +5,10 @@
     <mat-label>Search</mat-label>
     <input matInput  [(ngModel)]="caketypefilter">
   </mat-form-field>
-  <button  mat-icon-button (click)="filter()">
+  <button  mat-icon-button (click)="search()">
     <mat-icon>search</mat-icon>
   </button>
-  <button  mat-icon-button type="reset">
+  <button  mat-icon-button type="reset" (click)="reset()">
   <mat-icon>autorenew</mat-icon>
 </button>
   </div>
@@ -26,8 +26,8 @@
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
               <a routerLink="viewDetails/{{cakes.id}}" mat-menu-item>View Cake</a>
-              <a routerLink="editDetails/{{cakes.id}}" mat-menu-item>Edit Cake</a>
-              <a routerLink="deletecake/{{cakes.id}}" mat-menu-item>Delete Cake</a>
+              <a *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false "routerLink="editDetails/{{cakes.id}}" mat-menu-item>Edit Cake</a>
+              <a  *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false " routerLink="deletecake/{{cakes.id}}" mat-menu-item>Delete Cake</a>
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
@@ -35,10 +35,7 @@
         <mat-card-content class="dashboard-card-content">
           <img class="image" src="../../assets/{{cakes.id}}.jpg" alt="photo">
             <div  class="shopping_button">
-              <button style="background-color: yellow;" ><mat-icon>shopping_cart</mat-icon></button>
-              <button routerLink="buynow/:id" matButton mat-raised-button color="primary" >
-                buynow
-              </button>
+              <button matTooltip="Login First" mat-raised-button color="primary" [disabled]="!loginservice.isUserLoggedIn" routerLink="buynow/{{cakes.id}}" mat-button>Buy now</button>
             </div> 
         </mat-card-content>
       </mat-card>

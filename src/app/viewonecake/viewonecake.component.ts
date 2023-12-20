@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import { CakeService } from '../services/cake.service';
 import { cake } from '../models/cake';
-import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-viewonecake',
@@ -13,7 +12,7 @@ export class ViewonecakeComponent implements OnInit {
   constructor(
     private rs: ActivatedRoute,
     private cakeserv: CakeService,
-    private cartService: CartService
+    private router:Router
   ) {}
   mycake: cake = {};
 
@@ -31,8 +30,8 @@ export class ViewonecakeComponent implements OnInit {
     });
   }
 
-  addToCart(cake: any) {
-    this.cartService.addToCart(cake);
+  backtohome(){
+    this.router.navigateByUrl("viewallcakes")
   }
   
 }

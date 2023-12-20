@@ -127,6 +127,38 @@
       "state": "",
       "zipCode": "",
       "orderDate": ""
+    },
+    {
+      "emailId": "",
+      "username": "Naruto",
+      "title": "Double chocolate",
+      "price": 500,
+      "id": "2",
+      "quantity": 1,
+      "firstname": "Naruto",
+      "lastname": "Uzumaki",
+      "address": "Hidden Leaf",
+      "message": "happy birthday",
+      "city": "Land of Fire",
+      "state": "Ninja Land",
+      "zipCode": "00007",
+      "orderDate": "2023-12-20T18:30:00.000Z"
+    },
+    {
+      "emailId": "",
+      "username": "Naruto",
+      "title": "Chocolate Truffle",
+      "price": 400,
+      "id": "1",
+      "quantity": 1,
+      "firstname": "shubham",
+      "lastname": "kumar",
+      "address": "B-I 613 Madangir Dr.Ambedkar Nagar Sec-4 New Delhi 110062",
+      "message": "happy birthday",
+      "city": "South Delhi",
+      "state": "Delhi",
+      "zipCode": "11006",
+      "orderDate": "2023-12-21T18:30:00.000Z"
     }
   ]
 }

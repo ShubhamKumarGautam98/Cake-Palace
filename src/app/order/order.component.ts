@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Order } from '../models/order';
-import { User } from '../models/user';
 import { OrderService } from '../services/order.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { cake } from '../models/cake';
@@ -9,7 +8,6 @@ import { CakeService } from '../services/cake.service';
 import { ActivatedRoute } from '@angular/router';
 import { LoginService } from '../services/login.service';
 import { UserService } from '../services/user.service';
-import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-order',
@@ -58,7 +56,7 @@ export class OrderComponent implements OnInit {
     private loginService: LoginService,
     private userService: UserService,
     private formBuilder: FormBuilder,
-    private cartService: CartService
+
   ){
 
     this.orderForm = this.formBuilder.group({

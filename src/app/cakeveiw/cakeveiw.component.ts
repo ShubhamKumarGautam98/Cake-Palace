@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 import { CakeService } from '../services/cake.service';
 import { cake } from '../models/cake';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-cakeveiw',
@@ -14,7 +15,7 @@ export class CakeveiwComponent implements OnInit{
   cakesdata:cake[]=[];
   caketypefilter:string=""
   
-  constructor(private cakeservice:CakeService,private router:Router,private ar:ActivatedRoute){}
+  constructor(private cakeservice:CakeService,private router:Router,private ar:ActivatedRoute,public loginservice:LoginService){}
   ngOnInit(): void {
     this.ar.paramMap.subscribe(
       (params)=>{
@@ -25,28 +26,32 @@ export class CakeveiwComponent implements OnInit{
 
     this.getAllcakes();
   }
+  
+
   deletecake(id:any){
     this.cakeservice.deletecake(id).subscribe(()=>{
       this.getAllcakes();
       this.router.navigateByUrl("viewallcakes");
     })
   } 
+
   getAllcakes(){
    return this.cakeservice.getCakes().subscribe(
       (cakedata: cake[]) => {this.cakesdata=cakedata})
     }
    
-    filter()
-    {
-      this.cakesdata = this.cakesdata.filter(x => x.title?.toLowerCase().includes(this.caketypefilter.toLowerCase()));
-    }
-    cleardata()
-    {
-      this.getAllcakes();
-      
-    }
 
-
+search() {
+  if(this.caketypefilter!=""){
+    this.cakesdata = this.cakesdata.filter(x => x.title?.toLowerCase().includes(this.caketypefilter.toLowerCase()));
+  }
+  else{
+    this.getAllcakes();
+  }
 }
 
+reset(){
+  this.getAllcakes();
+}
+}
 

@@ -5,8 +5,7 @@
         <img class="image" src="../../assets/{{mycake.id}}.jpg" alt="photo" width="30%">
         <p>Cake: {{ mycake.title }} | Price: ₹{{ mycake.price }}<br>
            </p>
-        <p class="total">Total: ₹{{ mycake.total }}</p>
-
+        <h2>Cakes Information Required</h2>
         <mat-form-field class="full-width">
           <input matInput [(ngModel)]="myorder.orderDate" [matDatepicker]="picker" placeholder="Order Date">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
@@ -18,8 +17,6 @@
             <mat-label>Message</mat-label>
             <input matInput #message maxlength="50" placeholder="Ex. Birthday Cake ..." type="text" name="message"
               [(ngModel)]="myorder.message">
-            <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
-            <mat-hint align="end">{{message.value.length}} / 50</mat-hint>
           </mat-form-field>
         </form>
 
@@ -68,7 +65,7 @@
             <mat-label>Postal Code</mat-label>
             <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043" type="text"
               name="postalCode" [(ngModel)]="myorder.zipCode">
-            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+           
           </mat-form-field>
 
           <div>

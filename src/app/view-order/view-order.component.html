@@ -1,0 +1,33 @@
+<table class="custom-table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Cake Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>username</th>
+        <th>Address</th>
+        <th>State</th>
+        <th>City</th>
+        <th>EmailId</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of myorder">
+        <td>{{ order.id }}</td>
+        <td>{{ order.title }}</td>
+        <td>{{ order.quantity }}</td>
+        <td>{{ order.price }}</td>
+        <td>{{order.username}}</td>
+        <td>{{order.address}}</td>
+        <td>{{order.state}}</td>
+        <td>{{order.city}}</td>
+        <td>{{order.emailId}}</td>
+        <td>{{order.firstname}}</td>
+        <td>{{order.lastname}}</td>
+      </tr>
+    </tbody>
+  </table>
+  

@@ -45,12 +45,15 @@ export class LoginComponent {
 
   private showSnackBar(message: string): void {
     this.snackBar.open(message, 'Close', {
-      duration: 3000, // Duration in milliseconds
-      panelClass: ['custom-snackbar'] // Add your custom CSS class for styling
+      duration: 3000,
+      panelClass: ['custom-snackbar'] 
     });
   }
 
   togglePasswordVisibility(): void {
     this.hidePassword = !this.hidePassword;
+  }
+  registration(){
+    this.router.navigateByUrl('registration');
   }
 }
