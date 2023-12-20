@@ -1,0 +1,19 @@
+<div class="viewones">
+    <div class="cake">
+      <img src="../../assets/{{ mycake.id }}.jpg" alt="" width="100%">
+    </div>
+    <div class="para">
+      <p class="title">{{ mycake.title }}</p>
+      <p class="description">{{ mycake.description }}</p>
+      <p class="price">${{ mycake.price }}</p>
+    </div>
+</div>
+  <div class="button">
+    <button (click)="addToCart(mycake)" mat-button color="primary">Add To Cart</button>
+  </div>
+<div>
+  <button id="order-button"routerLink="buynow" mat-button >buynow</button>
+<button mat-icon-button class="remove-button">
+  <mat-icon>delete</mat-icon>
+</button>
+</div>

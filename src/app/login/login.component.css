@@ -1,0 +1,41 @@
+
+  /* Add this to your existing styles or create a new style section */
+
+  /* Login container */
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* Login card styling */
+  .login-card {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Larger input fields */
+  .larger-input {
+    width: 100%;
+  }
+
+  /* Create account link styling */
+  .create-account-link {
+    margin-top: 20px;
+    color: #333;
+  }
+
+  .create-account-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }
+

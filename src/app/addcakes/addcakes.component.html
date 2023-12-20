@@ -1,0 +1,32 @@
+<div class="ADD_cake" [formGroup]="mycakeForm">
+  <div class="design">
+    Add New Cake Information
+  </div>
+  <div style="margin-top: 20px;">
+    <mat-form-field class="larger-input">
+      <input matInput type="text" placeholder="Enter the number" formControlName="id">
+      <mat-error *ngIf="mycakeForm.get('id')?.hasError('required')">Cake number is required</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="larger-input">
+      <input matInput type="text" placeholder="Enter the cake name" formControlName="title">
+      <mat-error *ngIf="mycakeForm.get('title')?.hasError('required')">Cake name is required</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="larger-input">
+      <input matInput type="number" placeholder="Enter the cake price" formControlName="price">
+      <mat-error *ngIf="mycakeForm.get('price')?.hasError('required')">Cake price is required</mat-error>
+      <mat-error *ngIf="mycakeForm.get('price')?.hasError('min')">Minimum price is 0</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="larger-input">
+      <input matInput type="text" placeholder="Enter the cake description" formControlName="description">
+      <mat-error *ngIf="mycakeForm.get('description')?.hasError('required')">Cake description is required</mat-error>
+    </mat-form-field>
+  </div>
+
+  <button (click)="addcake()" mat-button color="primary" [disabled]="mycakeForm.invalid">Add Cake</button>
+</div>

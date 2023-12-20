@@ -1,0 +1,132 @@
+{
+  "cakes": [
+    {
+      "id": "1",
+      "title": "Chocolate Truffle",
+      "price": 400,
+      "description": "The heavenly taste of this Choco Truffle Cake will even leave the hardest-to-please chocolate addicts tranquil in every sense. Prepared with three layers of relishing chocolate cream filled in between the soft stacks of chocolate cake, and adorned with beautiful chocolate icing and rich glaze chocolate coating, this one is just irresistible."
+    },
+    {
+      "id": "2",
+      "title": "Double chocolate",
+      "price": 500,
+      "description": "A toothsome treat for the sugar lovers who are just passionate about chocolate and relish the mushiness of cake. Made of two layers of impossibly moist chocolate filled with mushy rich cream, this cake carries the enticing aroma of Vanilla and sumptuousness of chocolate. On top of it, the cake is garnished with handcrafted white and brown chocolate. Need I say more?"
+    },
+    {
+      "id": "3",
+      "title": "Chocolate cake",
+      "price": 350,
+      "description": "Ever thought that the taste of the chocolate cake is so good that you would not be able to get enough of it? Well, this cake is all about making you fall in love with it. The smoothing chocolaty texture with choco dust can easily fulfill your chocolate craving in a most perfect manner."
+    },
+    {
+      "id": "4",
+      "title": "Ferro Rocher's",
+      "price": 800,
+      "description": "Wondering what form of temptation would it take if it was to materialize? The answer is simple- a magically delicious and temptingly mushy - Ferrero Rocher Cake. Made of three layers of rich Chocolate cream, Ferrero Rocher crunch and hazelnut flavour, this Choco ball treat is beyond doubt an irresistible treat. Note: Number of Ferrero Rocher will vary depending on cake weight"
+    },
+    {
+      "id": "5",
+      "title": " Choco Chip Truffle",
+      "price": 700,
+      "description": "Experience pure indulgence with our irresistible truffle cake. This delectable creation is adorned with an abundance of luscious choco chips, adding a delightful crunch to each bite. The choco chips infuse bursts of rich chocolate goodness, creating a harmonious dance of textures and tastes. Comes with a melt-in-mouth truffle base, every bite is a moment of pure bliss. Elevate your taste experience and savour the decadence of our extraordinary truffle cake."
+    },
+    {
+      "id": "6",
+      "title": "Vanilla Cake",
+      "description": "Product Description Ever thought that the taste of the chocolate cake is so good that you would not be able to get enough of it? Well, this cake is all about making you fall in love with it. The smoothing chocolaty texture with choco dust can easily fulfill your chocolate craving in a most perfect manner",
+      "price": 350
+    },
+    {
+      "id": "7",
+      "title": "Butterscotch ",
+      "price": 450,
+      "description": "Product Description Always and Forever Delight! This three layered moist and smooth cake filled with butterscotch chips and Vanilla cream is something not to be missed! Topped with Butterscotch glaze and white chocolate flakes, adorned with scrumptious caramel dressing on the sides, it's time to feel the crunch!"
+    },
+    {
+      "id": "8",
+      "title": "Tiramisu",
+      "price": 700,
+      "description": "Product Description Embark on a journey of unparalleled gourmet indulgence with the exquisite Trio cake. Each bite is a symphony of lavishness, beginning with a foundation of velvety dark chocolate, followed by a layer of exquisite milk chocolate, and culminating in the pinnacle of white chocolate luxury. Adorned with a drizzle of decadent chocolate syrup and embellished with intricate chocolate shavings, this masterpiece exudes modern sophistication. Elevate your taste experience to the heights of opulence as you savor this confectionery marvel, where every element has been meticulously crafted to offer an unforgettable moment of refined indulgence."
+    },
+    {
+      "id": "9",
+      "title": "Cheeses Cake ",
+      "price": 500,
+      "description": "Cheesecake is a rich dessert dish made with cheese, typically cream cheese, although cottagecheese or even sour creammay be used, depending on the recipe. The texture of this dessert is extremely rich and creamy, and the taste can range from sweet to highly tangy."
+    },
+    {
+      "id": "10",
+      "title": "Red Velvet",
+      "price": 750,
+      "description": "Just like the song of Erik Christine, Make them feel yours! Treat your beloved with this luscious heart shape red velvet cake. Baked with love and topped with red and white chocolate shavings, this mouth-watering red velvet cake is sure to melt their heart."
+    },
+    {
+      "id": "11",
+      "title": "Blueberry Cake",
+      "price": 600,
+      "description": "Product Description The all-new luscious blueberry cake has made its mark as an all-time favorite across the households. This cake a delight devour, not just to look at! You cannot go wrong with this flavorsome cake. Seize the day of your loved ones and celebrate it with this delicious cake."
+    },
+    {
+      "id": "12",
+      "title": "Fruits ",
+      "price": 450,
+      "description": "Freshly baked Vanilla cake, Whipped cream and bountiful tropical fruits come together to create a treat that is even tastier than it looks. This combination of whipped cream and fresh fruit is a perfect start for any celebration and an enticing end to any meal.Kindly note, assortment of fruits may vary depending on seasonal availability."
+    }
+  ],
+  "users": [
+    {
+      "firstName": "shubham",
+      "lastName": "kumar",
+      "password": "Shubham*123",
+      "confirmPassword": "Shubham*123",
+      "role": "admin",
+      "gender": "",
+      "age": "23",
+      "email": "skshubhamkumar98@gmail.com",
+      "phone": "+918130167598",
+      "address": {
+        "street": "B-I 613 Madangir Dr.Ambedkar Nagar Sec-4 New Delhi 110062",
+        "city": "South Delhi",
+        "state": "Delhi",
+        "zipCode": "110062"
+      },
+      "id": 1
+    },
+    {
+      "firstName": "Naruto",
+      "lastName": "Uzumaki",
+      "password": "Hinata*123",
+      "confirmPassword": "Hinata*123",
+      "gender": "",
+      "role": "user",
+      "age": "24",
+      "email": "Naruto_500@gmail.com",
+      "phone": "9818077578",
+      "address": {
+        "street": "Hidden Leaf",
+        "city": "Land of Fire",
+        "state": "Ninja Land",
+        "zipCode": "00007"
+      },
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "emailId": "",
+      "username": "",
+      "title": "Ferro Rocher's",
+      "price": 800,
+      "id": "4",
+      "quantity": 1,
+      "firstname": "",
+      "lastname": "",
+      "address": "",
+      "message": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "orderDate": ""
+    }
+  ]
+}

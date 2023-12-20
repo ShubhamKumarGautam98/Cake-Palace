@@ -1,0 +1,88 @@
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Cart item styling */
+  .viewones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  /* Cake image styling */
+  .cake img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Information container */
+  .info {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+
+  /* Title styling */
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  /* Details container */
+  .details {
+    margin-top: 10px;
+    color: #555;
+  }
+
+  /* Price styling */
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* Description styling */
+  .description {
+    font-size: 14px;
+  }
+
+  /* Remove button styling */
+  .remove-button {
+    color: #ff5722; /* Red color for remove button */
+  }
+
+  /* Total container styling */
+  .total-container {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  /* Total price styling */
+  .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* Buy now button styling */
+  .buy-now-button {
+    background-color: #4caf50; /* Green color for button */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Hover effect on button */
+  .buy-now-button:hover {
+    background-color: #45a049;
+  }
