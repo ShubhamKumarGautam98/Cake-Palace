@@ -2,15 +2,15 @@
   <h1 class="mat-h1">Welcome To CakePalace </h1>
   <div class="example-form">
     <mat-form-field>
-    <mat-label>Search</mat-label>
-    <input matInput  [(ngModel)]="caketypefilter">
-  </mat-form-field>
-  <button  mat-icon-button (click)="search()">
-    <mat-icon>search</mat-icon>
-  </button>
-  <button  mat-icon-button type="reset" (click)="reset()">
-  <mat-icon>autorenew</mat-icon>
-</button>
+      <mat-label>Search</mat-label>
+      <input matInput [(ngModel)]="caketypefilter">
+    </mat-form-field>
+    <button mat-icon-button (click)="search()">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button type="reset" (click)="reset()">
+      <mat-icon>autorenew</mat-icon>
+    </button>
   </div>
 
   <mat-grid-list cols="4" rowHeight="350px">
@@ -26,17 +26,20 @@
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
               <a routerLink="viewDetails/{{cakes.id}}" mat-menu-item>View Cake</a>
-              <a *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false "routerLink="editDetails/{{cakes.id}}" mat-menu-item>Edit Cake</a>
-              <a  *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false " routerLink="deletecake/{{cakes.id}}" mat-menu-item>Delete Cake</a>
+              <a *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false "
+                routerLink="editDetails/{{cakes.id}}" mat-menu-item>Edit Cake</a>
+              <a *ngIf="loginservice.isAdminLoggedIn==true&&loginservice.isUserLoggedIn==false "
+                routerLink="deletecake/{{cakes.id}}" mat-menu-item>Delete Cake</a>
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
 
         <mat-card-content class="dashboard-card-content">
           <img class="image" src="../../assets/{{cakes.id}}.jpg" alt="photo">
-            <div  class="shopping_button">
-              <button matTooltip="Login First" mat-raised-button color="primary" [disabled]="!loginservice.isUserLoggedIn" routerLink="buynow/{{cakes.id}}" mat-button>Buy now</button>
-            </div> 
+          <div class="shopping_button">
+            <button matTooltip="Login First" mat-raised-button color="primary" [disabled]="!loginservice.isUserLoggedIn"
+              routerLink="buynow/{{cakes.id}}" mat-button>Buy now</button>
+          </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
