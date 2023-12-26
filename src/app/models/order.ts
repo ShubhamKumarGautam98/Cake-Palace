@@ -10,7 +10,6 @@ export interface Order {
     username: string;
     firstname:string;
     lastname:string;
-    emailId:string;
     address:string;
     city: string;
     state: string;

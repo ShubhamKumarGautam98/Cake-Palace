@@ -16,11 +16,13 @@ export class LoginService {
      if(data[0].role=="user"){
       this.isUserLoggedIn=true;
       this.username=data[0].firstName
+      this.email=data[0].emailId
      }
      else{
       this.isAdminLoggedIn=true;
       this.username=data[0].firstName;
       this.role=data[0].role;
+      this.email=data[0].emailId
      }
   }
    canLogOut()

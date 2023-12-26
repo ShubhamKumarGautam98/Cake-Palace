@@ -77,9 +77,9 @@
     {
       "firstName": "shubham",
       "lastName": "kumar",
-      "password": "Shubham*123",
-      "confirmPassword": "Shubham*123",
-      "role": "admin",
+      "password": "Shubham",
+      "confirmPassword": "Shubham",
+      "role": "user",
       "gender": "",
       "age": "23",
       "email": "skshubhamkumar98@gmail.com",
@@ -109,31 +109,32 @@
         "zipCode": "00007"
       },
       "id": 2
+    },
+    {
+      "firstName": "arujan",
+      "lastName": "til",
+      "password": "Shubham*123",
+      "confirmPassword": "Shubham*123",
+      "gender": "",
+      "role": "user",
+      "age": "20",
+      "email": "aruhan27@gmail.com",
+      "phone": "8130167598",
+      "address": {
+        "street": "B-I 613 Madangir Dr.Ambedkar Nagar Sec-4 New Delhi 110062",
+        "city": "South Delhi",
+        "state": "Delhi",
+        "zipCode": "110062"
+      },
+      "id": 3
     }
   ],
   "orders": [
     {
-      "emailId": "",
-      "username": "",
-      "title": "Ferro Rocher's",
-      "price": 800,
-      "id": "4",
-      "quantity": 1,
-      "firstname": "",
-      "lastname": "",
-      "address": "",
-      "message": "",
-      "city": "",
-      "state": "",
-      "zipCode": "",
-      "orderDate": ""
-    },
-    {
-      "emailId": "",
       "username": "Naruto",
-      "title": "Double chocolate",
-      "price": 500,
-      "id": "2",
+      "title": "Chocolate Truffle",
+      "price": 400,
+      "id": "1",
       "quantity": 1,
       "firstname": "Naruto",
       "lastname": "Uzumaki",
@@ -142,22 +143,6 @@
       "city": "Land of Fire",
       "state": "Ninja Land",
       "zipCode": "00007",
-      "orderDate": "2023-12-20T18:30:00.000Z"
-    },
-    {
-      "emailId": "",
-      "username": "Naruto",
-      "title": "Chocolate Truffle",
-      "price": 400,
-      "id": "1",
-      "quantity": 1,
-      "firstname": "shubham",
-      "lastname": "kumar",
-      "address": "B-I 613 Madangir Dr.Ambedkar Nagar Sec-4 New Delhi 110062",
-      "message": "happy birthday",
-      "city": "South Delhi",
-      "state": "Delhi",
-      "zipCode": "11006",
       "orderDate": "2023-12-21T18:30:00.000Z"
     }
   ]

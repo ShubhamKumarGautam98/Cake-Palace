@@ -13,6 +13,9 @@
               <mat-error class="error" *ngIf="firstName?.errors?.['minlength']">
                 Minimum 2 characters required
               </mat-error>
+              <mat-error class="error" *ngIf="firstName?.hasError('textOnly')">
+                First Name must contain only text characters.
+              </mat-error>
            </mat-form-field>
     
            <mat-form-field class="lastname">
@@ -63,7 +66,7 @@
             <mat-form-field class="age">
                 <mat-label>Age</mat-label>
                 <input matInput formControlName="age">
-                <mat-error *ngIf="registerForm.controls.age.errors?.['invalidAge']">Age must be 18 or older</mat-error>
+                <mat-error *ngIf="registerForm.controls.age.errors?.['invalidAge']">Age should be between 18-60</mat-error>
              </mat-form-field>
              <mat-form-field class="phonenumber">
                 <mat-label>Phone Number</mat-label>

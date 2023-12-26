@@ -21,7 +21,7 @@ export class RegistrationComponent implements OnInit {
   passwordPattern:any = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
   registerForm = this.formbuilder.group({
-    firstName:['', [Validators.required, Validators.minLength(2)]],
+    firstName:['', [Validators.required, Validators.minLength(2),this.textOnlyValidator]],
     lastName:[''],
     password:['', [Validators.required, Validators.pattern(this.passwordPattern)]],
     confirmPassword:['',  [Validators.required, Validators.pattern(this.passwordPattern)]],
@@ -52,10 +52,15 @@ export class RegistrationComponent implements OnInit {
 
   ageValidator(control: AbstractControl): { [key: string]: any } | null {
     const age = control.value;
-    if (age < 18) {
+    if (age < 18 || age >60) {
       return { invalidAge: true };
     }
     return null;
+  }
+  textOnlyValidator(control: AbstractControl): { [key: string]: any } | null {
+    const pattern = /^[a-zA-Z]*$/; // Regex to match only alphabets
+    const valid = pattern.test(control.value);
+    return valid ? null : { textOnly: true };
   }
 
 
@@ -104,14 +109,9 @@ export class RegistrationComponent implements OnInit {
     return this.registerForm.get("address.zipCode");
   }
 
-  // adduser()
-  // {
-  //   alert("user added");
-  // }
 
   saveUser() {
  
-    alert(this.registerForm.get('email')?.value)
     let email = this.registerForm.get('email')?.value?.toString();
     if (email) {
       this.userservice.checkIfUserExists(email).subscribe((data) => {
@@ -128,7 +128,7 @@ export class RegistrationComponent implements OnInit {
     }
   }
   canClose(){
-    if(this.registerForm.dirty){
+    if(this.registerForm.invalid){
       let response=confirm("Do you want to leave in between")
       return response;
     }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { CakeService } from '../services/cake.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';  // Import MatSnackBar
+import { MatSnackBar } from '@angular/material/snack-bar';  
 import { cake } from '../models/cake';
 
 @Component({
@@ -22,7 +22,7 @@ export class AddcakesComponent implements OnInit {
     private rs: ActivatedRoute,
     private dbserv: CakeService,
     private formBuilder: FormBuilder,
-    private snackBar: MatSnackBar  // Inject MatSnackBar
+    private snackBar: MatSnackBar  
   ) {}
 
   ngOnInit(): void {
@@ -42,7 +42,7 @@ export class AddcakesComponent implements OnInit {
     this.mycakeForm = this.formBuilder.group({
       id: [this.id, Validators.required],
       title: ['', Validators.required],
-      price: [0, [Validators.required, Validators.min(0)]],
+      price: [0, [Validators.required, Validators.min,Validators.max(5000)]],
       description: ['', Validators.required],
     });
   }
@@ -71,7 +71,6 @@ export class AddcakesComponent implements OnInit {
     });
   }
 
-  // Function to display snackbar
   showSnackBar(message: string) {
     this.snackBar.open(message, 'Close', {
       duration: 3000,

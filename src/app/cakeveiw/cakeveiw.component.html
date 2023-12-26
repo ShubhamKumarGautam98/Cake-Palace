@@ -36,9 +36,9 @@
 
         <mat-card-content class="dashboard-card-content">
           <img class="image" src="../../assets/{{cakes.id}}.jpg" alt="photo">
-          <div class="shopping_button">
-            <button matTooltip="Login First" mat-raised-button color="primary" [disabled]="!loginservice.isUserLoggedIn"
-              routerLink="buynow/{{cakes.id}}" mat-button>Buy now</button>
+          <div class="login_button">
+            <button mat-raised-button color="primary" [disabled]="!loginservice.isUserLoggedIn"
+        routerLink="buynow/{{cakes.id}}" mat-button>Buy now</button>
           </div>
         </mat-card-content>
       </mat-card>

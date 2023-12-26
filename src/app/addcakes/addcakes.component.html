@@ -19,6 +19,7 @@
       <input matInput type="number" placeholder="Enter the cake price" formControlName="price">
       <mat-error *ngIf="mycakeForm.get('price')?.hasError('required')">Cake price is required</mat-error>
       <mat-error *ngIf="mycakeForm.get('price')?.hasError('min')">Minimum price is 0</mat-error>
+      <mat-error *ngIf="mycakeForm.get('price')?.hasError('max')">Miximum price can be 5000 only</mat-error>
     </mat-form-field>
   </div>
   <div>

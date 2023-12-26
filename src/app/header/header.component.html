@@ -7,7 +7,9 @@
         Welcome {{loginService.username}}</a>
       <a *ngIf="loginService.isAdminLoggedIn==true&&loginService.isUserLoggedIn==false " mat-list-item mat-list-item
         routerLink="addcake">Add Cake</a>
-      <a mat-list-item routerLink="viewallcakes">View Cake</a>
+      <a mat-list-item routerLink="viewallcakes">View Cakes
+        
+      </a>
       <a mat-list-item routerLink="registration">Registration</a>
       <a *ngIf="loginService.isAdminLoggedIn==true&&loginService.isUserLoggedIn==false " mat-list-item mat-list-item
         routerLink="ViewOrder">View All Order</a>
@@ -26,10 +28,7 @@
       <span>CakePalace</span>
 
       <div class="icon">
-        <button mat-icon-button routerLink="addToCart" class="example-icon favorite-icon"
-          aria-label="Example icon-button with heart icon">
-          <mat-icon>shopping_cart</mat-icon>
-        </button>
+
         <button mat-icon-button routerLink="login" class="example-icon"
           aria-label="Example icon-button with share icon">
           <mat-icon>account_circle</mat-icon>

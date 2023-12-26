@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Order } from '../models/order';
 import { OrderService } from '../services/order.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -20,7 +20,6 @@ export class OrderComponent implements OnInit {
   orderForm: FormGroup;
   myorder: Order = {
     id: 0,
-    emailId: '',
     title: '',
     price: 0,
     quantity: 1,
@@ -62,9 +61,10 @@ export class OrderComponent implements OnInit {
     this.orderForm = this.formBuilder.group({
       quantity: [1, Validators.min(1)],
       firstname: ['', Validators.required],
-      
+      orderDate: [null, [Validators.required]],
     });
   }
+
 
   ngOnInit(): void {
     this.activateRoute.paramMap.subscribe(params => {
@@ -90,7 +90,6 @@ export class OrderComponent implements OnInit {
       })
     }
     let order: Order = {
-      emailId: this.loginService.email,
       username: this.loginService.username,
       title: this.mycake.title,
       price: this.mycake.price,
