@@ -79,7 +79,7 @@
       "lastName": "kumar",
       "password": "Shubham",
       "confirmPassword": "Shubham",
-      "role": "user",
+      "role": "admin",
       "gender": "",
       "age": "23",
       "email": "skshubhamkumar98@gmail.com",
@@ -111,39 +111,39 @@
       "id": 2
     },
     {
-      "firstName": "arujan",
-      "lastName": "til",
-      "password": "Shubham*123",
-      "confirmPassword": "Shubham*123",
+      "firstName": "itachi",
+      "lastName": "uchiha",
+      "password": "Itachi!123",
+      "confirmPassword": "Itachi!123",
       "gender": "",
       "role": "user",
-      "age": "20",
-      "email": "aruhan27@gmail.com",
-      "phone": "8130167598",
+      "age": "34",
+      "email": "itachiuchiha12@gmail.com",
+      "phone": "7818099567",
       "address": {
-        "street": "B-I 613 Madangir Dr.Ambedkar Nagar Sec-4 New Delhi 110062",
-        "city": "South Delhi",
-        "state": "Delhi",
-        "zipCode": "110062"
+        "street": "Hidden Leaf",
+        "city": "Land of Fire",
+        "state": "Ninja Land",
+        "zipCode": "00007"
       },
       "id": 3
     }
   ],
   "orders": [
     {
-      "username": "Naruto",
+      "username": "itachi",
       "title": "Chocolate Truffle",
       "price": 400,
       "id": "1",
       "quantity": 1,
-      "firstname": "Naruto",
-      "lastname": "Uzumaki",
+      "firstname": "itachi",
+      "lastname": "uchiha",
       "address": "Hidden Leaf",
       "message": "happy birthday",
       "city": "Land of Fire",
       "state": "Ninja Land",
       "zipCode": "00007",
-      "orderDate": "2023-12-21T18:30:00.000Z"
+      "orderDate": "2023-12-28T18:30:00.000Z"
     }
   ]
 }

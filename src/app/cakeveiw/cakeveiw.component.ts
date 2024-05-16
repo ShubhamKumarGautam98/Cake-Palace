@@ -13,7 +13,7 @@ import { LoginService } from '../services/login.service';
 })
 export class CakeveiwComponent implements OnInit{
   cakesdata:cake[]=[];
-  caketypefilter:string=""
+  caketypefilter:string="";
   
   constructor(private cakeservice:CakeService,private router:Router,private ar:ActivatedRoute,public loginservice:LoginService){}
   ngOnInit(): void {

@@ -6,10 +6,12 @@
         <p>Cake: {{ mycake.title }} | Price: ₹{{ mycake.price }}<br>
            </p>
         <h2>Cakes Information Required</h2>
-        <mat-form-field class="full-width">
-          <input matInput [(ngModel)]="myorder.orderDate" [matDatepicker]="picker" placeholder="Order Date">
+        <mat-form-field style="width: 100%;">
+          <input matInput [(ngModel)]="myorder.orderDate"   [min]="minDate"   [matDatepicker]="picker" placeholder="Order Date"
+            #orderdate="ngModel" name="orderdate" nrequired>
+          
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
+          <mat-datepicker #picker   ></mat-datepicker>
         </mat-form-field>
 
         <form class="example-form">

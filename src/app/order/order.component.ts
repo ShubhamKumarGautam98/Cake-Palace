@@ -16,8 +16,9 @@ import { UserService } from '../services/user.service';
 })
 
 export class OrderComponent implements OnInit {
-  orderDate: any;
+  minDate: Date = new Date()
   orderForm: FormGroup;
+  
   myorder: Order = {
     id: 0,
     title: '',
